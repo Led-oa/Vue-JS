@@ -1,10 +1,10 @@
 <script setup>
-import Tables from '../components/Tables.vue';
+import TableNovels from '../components/TableNovels.vue';
 </script>
 <template>
     <div class="listNovels">
-        <h1 class="titleNovelsPage">List of Novels</h1>
-        <Tables />
+        <h1 class="titleNovelsPage">Listes des Livres</h1>
+        <TableNovels />
     </div>
 </template>
 <style>
