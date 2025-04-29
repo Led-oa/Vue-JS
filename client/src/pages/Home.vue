@@ -9,7 +9,7 @@ import Carousel from '../components/Carousel.vue';
         <h3 class="title">Vue App Book</h3>
         <div class="presentation">
             <p>
-                Hello, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perspiciatis reprehenderit odio,
+                Hello hello hello hello, Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos perspiciatis reprehenderit odio,
                 debitis eaque at possimus deserunt, labore officiis sint architecto quaerat corrupti tempore
                 exercitationem, repellat ullam? Aliquam, ut saepe.
             </p>
