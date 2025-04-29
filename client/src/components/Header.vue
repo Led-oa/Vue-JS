@@ -2,16 +2,16 @@
     <div class="navbar">
         <div class="menu">
             <router-link :to="{ name: 'home' }" class="menu_item">
-                Home
+                Accueil
             </router-link>
             <router-link :to="{ name: 'light-novels' }" class="menu_item">
-                Light Novels
+                Livres
             </router-link>
             <router-link :to="{ name: 'projects' }" class="menu_item">
-                Projects
+                Projets
             </router-link>
             <router-link :to="{ name: 'about' }" class="menu_item">
-                About Us
+                A Propos
             </router-link>
         </div>
     </div>
