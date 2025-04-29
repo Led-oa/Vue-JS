@@ -18,12 +18,9 @@
 </template>
 
 <style>
-.header {
-    background-color: rgb(14, 114, 94);
-}
 
 .navbar {
-    background-color: rgb(7, 7, 32);
+    background-color: rgb(155, 0, 0);
     display: flex;
     justify-content: center;
     padding: 10px 10px 25px 10px;
@@ -55,6 +52,6 @@
 }
 
 .menu_item:hover {
-    background-color: rgb(129, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 </style>
