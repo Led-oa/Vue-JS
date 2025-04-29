@@ -1,10 +1,19 @@
 <script setup>
 import TableNovels from '../components/TableNovels.vue';
+import { useNovelsStore } from '../stores/NovelsStore';
+import { onMounted } from 'vue';
+
+const novelsStore = useNovelsStore();
+
+onMounted(() => {
+    novelsStore.loadNovels()
+})
+
 </script>
 <template>
     <div class="listNovels">
         <h1 class="titleNovelsPage">Listes des Livres</h1>
-        <TableNovels />
+        <TableNovels :novels="novelsStore.novels" />
     </div>
 </template>
 <style>
@@ -16,13 +25,13 @@ import TableNovels from '../components/TableNovels.vue';
     grid-auto-rows: minmax(100px, auto);
     padding: 15px;
     margin-top: 95px;
-    border: solid red;
+    /* border: solid red; */
     border-radius: 25px;
     justify-content: center;
 }
 
 .titleNovelsPage {
-    border: solid red;
+    /* border: solid red; */
     border-radius: 25px;
     text-align: center;
 }

@@ -1,3 +1,12 @@
+<script setup>
+defineProps({
+    novels: {
+        type: Array,
+        required: true,
+    },
+})
+</script>
+
 <template>
     <table>
         <thead>
@@ -11,13 +20,13 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td><img src="" alt="Pic"></td>
-                <td>Free</td>
-                <td>Freedom</td>
-                <td>14</td>
-                <td><a href="http://">Mega</a></td>
+            <tr v-for="novel in novels" :key="novel.id">
+                <td>{{ novel.id }}</td>
+                <td><img :src="novel.illustration" alt="Illustration" width="60" /></td>
+                <td>{{ novel.titre }}</td>
+                <td>{{ novel.auteur }}</td>
+                <td>{{ novel.volumes }}</td>
+                <td><a :href="novel.liens" target="_blank">Voir</a></td>
             </tr>
         </tbody>
     </table>

@@ -6,6 +6,7 @@ import TableProjects from '../components/TableProjects.vue';
         <h1 class="titleProjectPage">Listes des Projets</h1>
         <TableProjects />
     </div>
+    <!-- <button>Click Here</button> -->
 </template>
 
 <style>
@@ -17,13 +18,13 @@ import TableProjects from '../components/TableProjects.vue';
     grid-auto-rows: minmax(100px, auto);
     padding: 15px;
     margin-top: 95px;
-    border: solid red;
+    /* border: solid red; */
     border-radius: 25px;
     justify-content: center;
 }
 
 .titleProjectPage {
-    border: solid red;
+    /* border: solid red; */
     border-radius: 25px;
     text-align: center;
 }
